@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Equipo</title>
+    <link rel="stylesheet" href="assets/css/foodhut.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        h1, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .team-member {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            padding: 40px 0;
+            gap: 40px;
+            min-height: 250px; /* Asegura que todas las secciones tengan la misma altura */
+        }
+        .team-member:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .team-member img {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+        }
+        .team-text {
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 150px; /* Asegura que el texto tenga una altura mínima uniforme */
+        }
+    </style>
+</head>
+<body>
+    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/imgs/logo.svg" alt="Logo" width="50"> Software Squad Development
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#about">Acerca de Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#gallary">Portafolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="nuestro-equipo.html">Nuestro Equipo</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#blog">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contact">Contáctanos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header text-center">
+        <div class="overlay text-white">
+            <img src="assets/imgs/logo.svg" alt="Logo" width="150" class="mb-3">
+            <h1 class="display-3">Nuestro Equipo</h1>
+            <p class="lead">Conoce a las mentes detrás de Software Squad Development</p>
+        </div>
+    </header>
+
+    <section class="container py-5">
+        <div class="team-member">
+            <img src="assets/imgs/io.jpg" alt="Miembro 1">
+            <div class="team-text">
+                <h3>Raul Ortiz</h3>
+                <p>CEO - Encargado de la dirección estratégica de la empresa.</p>
+                <p><em>"La innovación y la visión nos llevan al futuro."</em></p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="assets/imgs/Marco.jpg" alt="Miembro 2">
+            <div class="team-text">
+                <h3>Marco Montesdeoca</h3>
+                <p>CTO - Responsable de la innovación tecnológica y el desarrollo.</p>
+                <p><em>"Cada línea de código cuenta una historia."</em></p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="assets/imgs/Carlos.jpg" alt="Miembro 3">
+            <div class="team-text">
+                <h3>Carlos Alvarado</h3>
+                <p>Desarrollador - Especialista en backend y frontend.</p>
+                <p><em>"Construimos software, creamos experiencias."</em></p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="assets/imgs/Daniel.jpg" alt="Miembro 4">
+            <div class="team-text">
+                <h3>Daniel Fuelpaz</h3>
+                <p>Desarrollador Full-Stack - Encargado del desarrollo integral de las aplicaciones.</p>
+                <p><em>"El éxito se basa en la pasión y la constancia."</em></p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="assets/imgs/Elias.jpg" alt="Miembro 5">
+            <div class="team-text">
+                <h3>Jose Muyulema</h3>
+                <p>Diseñador UI/UX - Responsable de la experiencia y el diseño visual de los productos.</p>
+                <p><em>"El diseño no es solo apariencia, es funcionalidad."</em></p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="assets/imgs/Meco.jpg" alt="Miembro 6">
+            <div class="team-text">
+                <h3>Alejandro Rivera</h3>
+                <p>QA Tester - Garantiza la calidad del software a través de pruebas y mejoras.</p>
+                <p><em>"La calidad no es un acto, es un hábito."</em></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-3 bg-dark text-light">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Software Squad Development</p>
+    </footer>
+</body>
+</html>
