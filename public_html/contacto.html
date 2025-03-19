@@ -1,32 +1,113 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="contacto.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with FoodHut landing page.">
+    <meta name="author" content="Devcrud">
+    <title>FoodHut | Free Bootstrap 4.3.x template</title>
+   
+    <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
+    <link rel="stylesheet" href="assets/vendors/animate/animate.css">
+
+    <!-- Bootstrap + FoodHut main styles -->
+    <link rel="stylesheet" href="assets/css/foodhut.css">
 </head>
-<body>
-    <header class="header">
-        <h1  class="titulo-contacto">Contáctanos</h1>
-        <p class="eslogan">Estamos aquí para ayudarte !</p>
-    </header>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     
-    <section class="container my-5">
+    <!-- Navbar -->
+    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top" data-spy="affix" data-offset-top="10">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallary">Portafolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                </li>
+            </ul>
+            <a class="navbar-brand m-auto" href="#">
+                <img src="assets/imgs/logitoo.png" class="brand-img" alt="">
+                <span class="brand-txt">Software Squad</span>
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Acerca de Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nuestro-equipo.html">Nuestro Equipo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contáctanos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header text-center">
+        <div class="overlay text-white">
+            <h1 class="display-3">Contáctanos</h1>
+            <p class="lead">Estamos aquí para ayudarte!</p>
+        </div>
+    </header>
+
+    <!-- Sección de Contacto -->
+    <section id="contact" class="container my-5">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12 text-center">
                 <h3 class="titulo">Información de Contacto</h3>
-                <p class="icono"><span class="ti-location-pin pr-3"></span> Avenida los chásquis, Ambato</p>
-                <p class="icono"><span class="ti-support pr-3"></span> (999) 12345678 </p>
-                <p class="icono"><span class="ti-email pr-3"></span> ejemplo@email.com</p>
+                <p class="icono"><span class="ti-location-pin pr-3"></span>Avenida los chásquis, Ambato</p>
+                <p class="icono"><span class="ti-support pr-3"></span>(999)12345678</p>
+                <p class="icono"><span class="ti-email pr-3"></span>SSquad@SoftS.com</p>
             </div>
-            <div class="col-md-6">
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12 text-center">
+                <h3 class="titulo">Síguenos en Nuestras Redes Sociales</h3>
+                <div class="social-icons">
+                    <div class="social-item">
+                        <a href="https://facebook.com" target="_blank">
+                            <span class="ti-facebook"></span> Software Squad
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://instagram.com" target="_blank">
+                            <span class="ti-instagram"></span> @SoftwareSquad
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://twitter.com" target="_blank">
+                            <span class="ti-twitter"></span> @SoftwareSquad
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://linkedin.com" target="_blank">
+                            <span class="ti-linkedin"></span> Software Squad
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://youtube.com" target="_blank">
+                            <span class="ti-youtube"></span> Software Squad
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12">
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31910.924418498365!2d-78.64856626139189!3d-1.2521700190960035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d38225e088295f%3A0xb16c26da66e6e4b3!2sUniversidad%20T%C3%A9cnica%20de%20Ambato!5e0!3m2!1ses-419!2sec!4v1742399487591!5m2!1ses-419!2sec" 
                     width="100%" 
-                    height="300" 
+                    height="400" 
                     style="border:0; border-radius: 8px;" 
                     allowfullscreen="" 
                     loading="lazy" 
@@ -34,12 +115,28 @@
                 </iframe>
             </div>
         </div>
-    </section>    
-    
-    <footer class="bg-dark text-light text-center py-3">
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-4">
         <p class="derechos">&copy; <script>document.write(new Date().getFullYear())</script> - Todos los derechos reservados</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- wow.js -->
+    <script src="assets/vendors/wow/wow.js"></script>
+    
+    <!-- google maps -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- FoodHut js -->
+    <script src="assets/js/foodhut.js"></script>
+
 </body>
 </html>
