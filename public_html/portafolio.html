@@ -19,13 +19,7 @@
       .project-card {
         margin-bottom: 20px;
       }
-      .header {
-        background: url("assets/imgs/header-bg.jpg") no-repeat center
-          center/cover;
-        height: 100vh;
-        position: relative;
-        padding-top: 100px; /* Margen superior para evitar que el navbar tape el contenido */
-      }
+
       .overlay {
         position: absolute;
         top: 50%;
@@ -43,10 +37,10 @@
       }
       /* Estilo para el nuevo header */
       .simple-header {
-          margin-top: 8vh;
-        padding-top: 100px; /* Espacio para que no lo tape el navbar */
+        padding-top: 15vh; /* Espacio para que no lo tape el navbar */
         text-align: center;
-        background-color: #f8f9fa; /* Fondo claro para resaltar */
+        background-color: #7e1814; /* Fondo claro para resaltar */
+        color: white;
       }
       /* Margen superior para la sección portfolio */
       #portfolio {
@@ -57,20 +51,19 @@
         font-size: 3.5rem;
         font-weight: 300;
         margin-bottom: 0.5rem;
-        color: black;
+        color: white;
       }
       .lead {
         font-size: 1.25rem;
         font-weight: 300;
-        color: black;
+        color: white;
       }
       .card-body {
         background-color: #f8f9fa; /* Fondo claro para resaltar */
         color: black;
-        padding:40px;
+        padding: 40px;
         border-radius: 10px;
       }
-      
     </style>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -101,7 +94,12 @@
           </li>
         </ul>
         <a class="navbar-brand m-auto" href="#">
-          <img src="assets/imgs/logo.svg" class="brand-img" alt="" />
+          <img
+            src="assets/imgs/sslogo.png"
+            class="brand-img"
+            alt=""
+            width="300px"
+          />
           <span class="brand-txt">Portafolio</span>
         </a>
         <ul class="navbar-nav">
@@ -115,89 +113,93 @@
     <!-- Simple Header (nuevo) -->
     <header class="simple-header">
       <h1 class="display-4">Portafolio</h1>
-      <p class="lead">Proyectos destacados</p>
     </header>
 
     <!-- Portfolio Section (nuevo) -->
     <section id="portfolio" class="container">
-      <h2 class="section-title text-center mb-5">Mis Proyectos</h2>
+      <h2 class="section-title text-center mb-5">Nuestros Proyectos</h2>
       <div class="row">
         <div class="col-md-6">
           <div class="card project-card">
+            <img
+              src="assets/imgs/proyecto1.png"
+              class="card-img-top"
+              alt="Proyecto 1"
+            />
             <div class="card-body">
-              <h5 class="card-title">Proyecto 1</h5>
+              <h5 class="card-title">Sambi</h5>
               <p class="card-text">
-                Descripción del proyecto 1. Este es un proyecto increíble que
-                hemos desarrollado con mucho esfuerzo y dedicación.
+                <strong>SAMBI</strong> es una aplicación web
+                moderna diseñada para ofrecer una experiencia de usuario fluida
+                y dinámica en la compra de chocolates y arreglos personalizados.
+                Gracias a su arquitectura de una sola página, el contenido se actualiza
+                dinámicamente eliminando la necesidad de recargar la página.
               </p>
-              <h6>Participantes:</h6>
-              <ul>
-                <li>Participante 1</li>
-                <li>Participante 2</li>
+              <ul class="card-text">
+                <li>
+                  ✅ <strong>Interfaz interactiva:</strong> Diseñada con una
+                  interfaz minimalista y cero agresiva para una experiencia
+                  intuitiva.
+                </li>
+                <li>
+                  ✅ <strong>Carga rápida:</strong> Reduce tiempos de espera al
+                  minimizar solicitudes al servidor.
+                </li>
+                <li>
+                  ✅
+                  <strong>Optimización para dispositivos móviles:</strong>
+                  Diseño responsivo para facilitar la compra desde cualquier
+                  dispositivo.
+                </li>
               </ul>
+              <p class="card-text">
+                Con esta SPA, <strong>SAMBI</strong> garantiza una navegación
+                eficiente y atractiva para sus clientes, mejorando la
+                experiencia de compra de chocolates y arreglos exclusivos. 🍫✨
+              </p>
               <a
-                href="https://github.com/usuario/proyecto1"
+                href="https://github.com/D4rkGh057/sambi"
                 class="btn btn-primary"
                 target="_blank"
-                >Ver en GitHub</a
+                ><img
+                  src="assets/imgs/github-mark-white.svg"
+                  alt=""
+                  width="30px"
+                />
+                Ver en GitHub</a
               >
             </div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="card project-card">
+            <img
+              src="assets/imgs/proyecto2.png"
+              class="card-img-top"
+              alt="Proyecto 2"
+            />
             <div class="card-body">
-              <h5 class="card-title">Proyecto 2</h5>
+              <h5 class="card-title">SmarTramites</h5>
               <p class="card-text">
-                Descripción del proyecto 2. Este es otro proyecto fantástico que
-                hemos trabajado con mucha pasión y entusiasmo.
+                <strong>SmarTramites</strong> es una plataforma web para el GADMA que agiliza la gestión de trámites. Los ciudadanos acceden a información, requisitos, formatos y enlaces en un solo lugar, con navegación fluida.
               </p>
-              <h6>Participantes:</h6>
-              <ul>
-                <li>Participante 1</li>
-                <li>Participante 2</li>
+              <ul class="card-text">
+                <li>✅ <strong>Gestión centralizada:</strong> Creación, consulta, actualización y eliminación de trámites, requisitos, formatos y enlaces de forma integrada.</li>
+                <li>✅ <strong>Consulta libre:</strong> Los ciudadanos pueden buscar trámites fácilmente, accediendo a información relevante de manera rápida.</li>
+                <li>✅ <strong>Tecnologías modernas:</strong> Desarrollada con React para la interfaz y NestJS para un backend robusto y escalable.</li>
               </ul>
-              <a
-                href="https://github.com/usuario/proyecto2"
-                class="btn btn-primary"
-                target="_blank"
-                >Ver en GitHub</a
-              >
+              <p class="card-text">
+                Con <strong>SmarTramites</strong>, el GADMA garantiza una gestión eficiente y transparente, mejorando la experiencia para administradores y ciudadanos. 📄✨
+              </p>
+              <a href="https://github.com/D4rkGh057/frontend_GADMA" class="btn btn-primary" target="_blank">
+                <img src="assets/imgs/github-mark-white.svg" alt="" width="30px" /> Ver en GitHub
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer (sin modificar) -->
-    <div
-      class="container-fluid bg-dark text-light has-height-md middle-items border-top text-center wow fadeIn"
-    >
-      <div class="row">
-        <div class="col-sm-4">
-          <h3>EMAIL</h3>
-          <p class="text-muted">info@website.com</p>
-        </div>
-        <div class="col-sm-4">
-          <h3>TELÉFONO</h3>
-          <p class="text-muted">(123) 456-7890</p>
-        </div>
-        <div class="col-sm-4">
-          <h3>DIRECCIÓN</h3>
-          <p class="text-muted">12345 Fake ST NoWhere AB Country</p>
-        </div>
-      </div>
-    </div>
-    <div class="bg-dark text-light text-center border-top wow fadeIn">
-      <p class="mb-0 py-3 text-muted small">
-        &copy; Copyright
-        <script>
-          document.write(new Date().getFullYear());
-        </script>
-        Hecho con <i class="ti-heart text-danger"></i> Por
-        <a href="#">Tu Nombre</a>
-      </p>
-    </div>
 
     <!-- Core -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
