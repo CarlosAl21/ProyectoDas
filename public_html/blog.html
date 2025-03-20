@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS | Blog</title>
+    <!--
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/tailwind.min.css">
+    -->
+    <link rel="stylesheet" href="assets/css/foodhut.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+    <script type="module" src="assets/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Headersito -->
+    </header>
+
+    <main class="container">
+        <h1>Blog</h1>
+        <section class="blog-grid">
+
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footersito -->
+    </footer>
+    <script type="module">
+        // Importar los datos
+        import { blogPosts } from './blog-datitos.js';
+    
+        // Patrón de tamaños para las tarjetas
+        const sizePattern = ["full", "half", "half", "full"]; // Patrón: ancho, corto, corto
+    
+        // Llamar a la función para renderizar las tarjetas cuando la página cargue
+        document.addEventListener("DOMContentLoaded", () => {
+            const blogGrid = document.querySelector(".blog-grid");
+    
+            // Limpiar el contenedor antes de agregar las tarjetas
+            blogGrid.innerHTML = "";
+    
+            // Índice para recorrer el patrón
+            let patternIndex = 0;
+    
+            // Crear y agregar cada tarjeta al contenedor
+            blogPosts.forEach((post) => {
+                // Obtener el tamaño basado en el patrón
+                const size = sizePattern[patternIndex];
+                const card = createBlogCard(post, size);
+                blogGrid.appendChild(card);
+    
+                // Avanzar en el patrón y reiniciar si es necesario
+                patternIndex = (patternIndex + 1) % sizePattern.length;
+            });
+        });
+    
+        // Función para crear una tarjeta de blog
+        function createBlogCard(post, size) {
+            const article = document.createElement("article");
+            article.classList.add("blog-card");
+    
+            // Asignar el tamaño basado en el patrón
+            if (size === "full") {
+                article.classList.add("full-width");
+            } else {
+                article.classList.add("half-width");
+            }
+    
+            // Crear la estructura de la tarjeta
+            article.innerHTML = `
+                <img src="${post.image}" alt="Imagen del post" class="blog-card-image">
+                <div class="blog-card-content">
+                    <h2 class="blog-card-title">${post.title}</h2>
+                    <p class="blog-card-date">Publicado el ${post.date}</p>
+                    <p class="blog-card-summary">${post.summary}</p>
+                </div>
+            `;
+            return article;
+        }
+    </script>
+</body>
+
+</html>
