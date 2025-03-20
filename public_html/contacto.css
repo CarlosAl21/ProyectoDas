@@ -1,0 +1,108 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #343a40 !important;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: rgb(113, 150, 157);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+h3 {
+    color: #f3f4f5;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #f4f6f8;
+
+}
+
+p {
+    color: #8299ac;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #343a40;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #343a40;
+}
+
+.titulo{
+    margin: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    width: 100%;
+
+}
+.subtitulo {
+    color: #F85C70;
+}
+.titulo-contacto {
+    color: #F85C70;
+}
+.derechos{
+    color: #F85C70;
+}
+
+.eslogan{
+    color: white;
+}
+
+.icono {
+    margin: 25px;
+    color: #eceff1;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem; 
+    margin-bottom: 15px; 
+}
+
+.icono span {
+    color: #3f3d3d; 
+    font-size: 1.5rem; 
+    margin-right: 10px; 
+}
+

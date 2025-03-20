@@ -14,54 +14,6 @@
 
     <!-- Bootstrap + FoodHut main styles -->
     <link rel="stylesheet" href="assets/css/foodhut.css">
-
-    <!-- Estilos personalizados para el blog -->
-    <style>
-        /* Estilos para la sección de blog */
-        .blog-section {
-            padding: 80px 0;
-        }
-
-        .blog-card {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            margin-bottom: 20px;
-            transition: transform 0.3s ease;
-        }
-
-        .blog-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .blog-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .blog-card-content {
-            padding: 20px;
-        }
-
-        .blog-card-title {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            color: #FF0000; /* Color rojo del título del navbar */
-        }
-
-        .blog-card-date {
-            font-size: 0.9rem;
-            color: #666;
-            margin-bottom: 10px;
-        }
-
-        .blog-card-summary {
-            font-size: 1rem;
-            color: #333;
-        }
-    </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     
@@ -99,43 +51,76 @@
             </ul>
         </div>
     </nav>
+
     <!-- Header -->
     <header class="header text-center">
         <div class="overlay text-white">
-            <h1 class="display-3">Blogs</h1>
-            <p class="lead">Explora nuestras ideas, proyectos y reflexiones. En nuestro blog compartimos conocimientos, experiencias y las últimas tendencias en tecnología y desarrollo.</p>
+            <h1 class="display-3">Contáctanos</h1>
+            <p class="lead">Estamos aquí para ayudarte!</p>
         </div>
     </header>
 
-    <!-- Sección de Blog -->
-    <section id="blog" class="blog-section">
-        <div class="container">
-            <div class="row">
-                <!-- Primera tarjeta de blog -->
-                <div class="col-md-6">
-                    <div class="blog-card">
-                        <img src="assets/imgs/blog-1.jpg" alt="Imagen del blog 1">
-                        <div class="blog-card-content">
-                            <h3 class="blog-card-title">Título del Blog 1</h3>
-                            <p class="blog-card-date">Publicado el 10 de octubre de 2023</p>
-                            <p class="blog-card-summary">Este es un ejemplo de contenido para el primer blog. Puedes agregar más detalles aquí.</p>
-                        </div>
+    <!-- Sección de Contacto -->
+    <section id="contact" class="container my-5">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="titulo">Información de Contacto</h3>
+                <p class="icono"><span class="ti-location-pin pr-3"></span>Avenida los chásquis, Ambato</p>
+                <p class="icono"><span class="ti-support pr-3"></span>(999)12345678</p>
+                <p class="icono"><span class="ti-email pr-3"></span>SSquad@SoftS.com</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12 text-center">
+                <h3 class="titulo">Síguenos en Nuestras Redes Sociales</h3>
+                <div class="social-icons">
+                    <div class="social-item">
+                        <a href="https://facebook.com" target="_blank">
+                            <span class="ti-facebook"></span> Software Squad
+                        </a>
                     </div>
-                </div>
-                <!-- Segunda tarjeta de blog -->
-                <div class="col-md-6">
-                    <div class="blog-card">
-                        <img src="assets/imgs/blog-2.jpg" alt="Imagen del blog 2">
-                        <div class="blog-card-content">
-                            <h3 class="blog-card-title">Título del Blog 2</h3>
-                            <p class="blog-card-date">Publicado el 15 de octubre de 2023</p>
-                            <p class="blog-card-summary">Este es un ejemplo de contenido para el segundo blog. Puedes agregar más detalles aquí.</p>
-                        </div>
+                    <div class="social-item">
+                        <a href="https://instagram.com" target="_blank">
+                            <span class="ti-instagram"></span> @SoftwareSquad
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://twitter.com" target="_blank">
+                            <span class="ti-twitter"></span> @SoftwareSquad
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://linkedin.com" target="_blank">
+                            <span class="ti-linkedin"></span> Software Squad
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://youtube.com" target="_blank">
+                            <span class="ti-youtube"></span> Software Squad
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31910.924418498365!2d-78.64856626139189!3d-1.2521700190960035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d38225e088295f%3A0xb16c26da66e6e4b3!2sUniversidad%20T%C3%A9cnica%20de%20Ambato!5e0!3m2!1ses-419!2sec!4v1742399487591!5m2!1ses-419!2sec" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0; border-radius: 8px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-4">
+        <p class="derechos">&copy; <script>document.write(new Date().getFullYear())</script> - Todos los derechos reservados</p>
+    </footer>
 
     <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
