@@ -11150,8 +11150,9 @@ pre {
 }
 
 .navbar-brand .brand-img {
-  width: 110px;
-  display: inline-block;
+  width: 300px;
+  /* display: inline-block; */
+  align-items: center;
   margin: auto;
   opacity: 1;
   visibility: visible;
@@ -11200,7 +11201,7 @@ pre {
 .header {
   height: 100vh;
   max-height: 900px;
-  background: url(../imgs/main.jpg) no-repeat center center fixed;
+  background: url(../imgs/fondo.jpg) no-repeat center center fixed;
   background-size: cover;
   min-height: 750px;
 }
