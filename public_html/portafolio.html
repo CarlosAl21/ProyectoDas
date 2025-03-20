@@ -20,33 +20,6 @@
         margin-bottom: 20px;
       }
 
-      .overlay {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        color: white;
-      }
-      .section-title {
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
-      }
-      .custom-navbar {
-        background-color: rgba(0, 0, 0, 0.7);
-      }
-      /* Estilo para el nuevo header */
-      .simple-header {
-        padding-top: 15vh; /* Espacio para que no lo tape el navbar */
-        text-align: center;
-        background-color: #7e1814; /* Fondo claro para resaltar */
-        color: white;
-      }
-      /* Margen superior para la sección portfolio */
-      #portfolio {
-        padding-top: 80px; /* Ajusta este valor según la altura de tu navbar */
-      }
-
       .display-4 {
         font-size: 3.5rem;
         font-weight: 300;
@@ -115,13 +88,16 @@
     </nav>
 
     <!-- Simple Header (nuevo) -->
-    <header class="simple-header">
-      <h1 class="display-4">Portafolio</h1>
-    </header>
+    <header id="home" class="header">
+      <div class="overlay text-white text-center">
+          <h1 class="display-2 font-weight-bold my-3">Portafolio</h1>
+          <p class="lead">Conoce los proyectos que hemos desarrollado con pasión y dedicación.</p>
+          <a class="btn btn-lg btn-primary" href="#portfolio">Ver Servicios</a>
+      </div>
+  </header>
 
     <!-- Portfolio Section (nuevo) -->
-    <section id="portfolio" class="container">
-      <h2 class="section-title text-center mb-5">Nuestros Proyectos</h2>
+    <section id="portfolio" class="container my-5">
       <div class="row">
         <div class="col-md-6">
           <div class="card project-card">
