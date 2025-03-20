@@ -591,7 +591,11 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  
+  background-color: rgba(0, 0, 0, 0.03);
 }
+
+
 
 .row {
   display: -webkit-box;
@@ -1171,6 +1175,12 @@ pre code {
             flex: 0 0 33.33333%;
     max-width: 33.33333%;
   }
+
+  .col-md-4 img {
+    width: 100%; /* Se adapta al contenedor */
+    height: 200px; /* Mantiene un tamaño uniforme */
+    object-fit: contain; /* Evita que se deforme o recorte */
+}
   .col-md-5 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 41.66667%;
@@ -11266,7 +11276,7 @@ pre {
 }
 
 .has-img-bg {
-  background: url(../imgs/about-section.jpg) no-repeat center center;
+  background: url(../imgs/programacion.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -11281,7 +11291,7 @@ pre {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../imgs/book-table-img.jpg) no-repeat center center fixed;
+  background: url(../imgs/fondo.jpg) no-repeat center center fixed;
   background-size: cover;
   z-index: -1;
   opacity: .3;
@@ -11336,16 +11346,26 @@ pre {
 }
 
 .gallary {
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrar elementos */
+  gap: 20px; /* Espacio entre imágenes */
+  padding: 20px;
 }
 
 .gallary .gallary-item {
-  padding: 0;
-  border: 1px solid #343a40;
+  position: relative;
+  width: 300px; /* Aumenta el tamaño de los contenedores */
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px; /* Bordes redondeados opcionales */
+  border: 2px solid #343a40; /* Bordes visibles */
 }
 
 .gallary .gallary-item .gallary-img {
   width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantiene la proporción sin distorsión */
 }
 
 .gallary .gallary-item .gallary-overlay {
@@ -11355,32 +11375,21 @@ pre {
   top: 0;
   width: 100%;
   height: 100%;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: all 0.2s linear 0s;
-  transition: all 0.2s linear 0s;
-}
-
-.gallary .gallary-item .gallary-overlay .gallary-icon {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 
 .gallary .gallary-item:hover .gallary-overlay {
   visibility: visible;
   opacity: 1;
+}
+
+.gallary .gallary-item .gallary-overlay .gallary-icon {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
 }
